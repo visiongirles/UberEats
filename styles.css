@@ -1,0 +1,136 @@
+html {
+    --light-green: #57AD56;
+    --green: #59BD5A;
+    --dark-green: #49A144;
+    --text-color: #1D1D1D;
+    --light-gray: #D8D8D8;
+    --darker-gray: #626262;
+    --dark-gray: #757575;
+    --white: #fff;
+    --black: #000000;
+    --lighter-black: #262626;
+    --shadow-gray: #979797;
+    --max-width: 962px;
+}
+
+:root {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.content-max-width {
+    display: block;
+    max-width: 962px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header-row {
+    display: flex;
+    padding: 0.2em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-row-2 {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-item {
+    padding: 0.5em;
+
+}
+
+.header-col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button-login {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    background-color: white;
+    padding: 1.25em;
+    /* line-height: 1; */
+    margin: 0;
+    font: inherit;
+    font-size: 0.8125rem;
+    font-weight: bold;
+}
+
+.button-login:active {
+    background-color: var(--light-gray);
+}
+
+.button-basket {
+    background-color: white;
+    border: 0;
+    padding: 1em;
+}
+
+.button-basket:active {
+    background-color: var(--light-gray);
+}
+
+
+.search {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #757575;
+    /* mix-blend-mode: normal; */
+    opacity: 0.3;
+    margin-top: 4em;
+}
+
+.search:focus-visible {
+    border: 0;
+    opacity: 1;
+    border-bottom: 1px solid #757575;
+    outline: none;
+}
+
+.restaurant-cards {
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.restaurant-card {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.restaurant-card>*+* {
+    padding: 0.3rem 0;
+    margin: 0;
+}
+
+.price {
+    color: var(--darker-gray);
+}
