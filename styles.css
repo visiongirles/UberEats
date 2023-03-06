@@ -31,6 +31,7 @@ body {
 
 .header {
     width: 100%;
+    min-width: 300px;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
@@ -147,15 +148,6 @@ body {
     margin: 0 auto;
 }
 
-
-
-/* for mobile */
-/* @media only screen and (max-width: 768px) {
-    .restaurant-card {
-        margin: 0 auto;
-    }
-} */
-
 .restaurant-card>*+* {
     padding: 0.3rem 0;
     margin: 0;
@@ -175,4 +167,75 @@ body {
     font-size: 0.8125rem;
 }
 
-/* Grid set-up*/
+.p-1 {
+    display: block;
+    padding: 2em 0;
+}
+
+footer {
+    background-color: var(--lighter-black);
+    min-width: 300px;
+    color: var(--white);
+}
+
+
+
+footer .hashtag {
+    color: var(--light-green)
+}
+
+.row.grid {
+    display: grid;
+    text-align: start;
+    padding: 2em 0;
+    margin: 0;
+    grid-template-columns: repeat(auto-fill, minmax(308px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1em;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    padding: 0;
+
+}
+
+.row.p-1 {
+    padding: 2em 0;
+}
+
+.row.center.p-1 {
+    column-gap: 2em;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 0em;
+}
+
+.col>* {
+    padding: 0.5em 0;
+}
+
+.row.center {
+    justify-content: center;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+.no-decoration-link,
+.no-decoration-link:link,
+.no-decoration-link:visited,
+.no-decoration-link:hover,
+.no-decoration-link:active {
+    text-decoration: none;
+    color: var(--white);
+}
