@@ -1,15 +1,21 @@
 html {
-    --light-green: #57AD56;
-    --green: #59BD5A;
-    --dark-green: #49A144;
+    --light-green: hsl(119, 35%, 51%);
+    --green: hsl(121, 43%, 55%);
+    --dark-green: hsl(117, 41%, 45%);
     --text-color: #1D1D1D;
-    --light-gray: #D8D8D8;
-    --darker-gray: #626262;
-    --dark-gray: #757575;
-    --white: #fff;
     --black: #000000;
-    --lighter-black: #262626;
-    --shadow-gray: #979797;
+    --black-150: hsl(0, 0%, 15%);
+    --black-110: hsl(0, 0%, 11%);
+    --black-shadow: hsla(0, 0%, 15%, 0.16);
+    --black-230: hsl(0, 0%, 23%);
+    --gray-380: hsl(0, 0%, 38%);
+    --gray-460: hsl(0, 0%, 46%);
+    --gray-460-shadow: hsl(0, 0%, 46%, 0.16);
+    --gray-590: hsl(0, 0%, 59%);
+    --gray-850: hsl(0, 0%, 85%);
+    --gray-880: hsl(0, 0%, 88%);
+    --gray-950: hsl(0, 0%, 95%);
+    --white: #fff;
     --max-width: 962px;
 }
 
@@ -32,7 +38,7 @@ body {
 .header {
     width: 100%;
     min-width: 300px;
-    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    box-shadow: 0px 0px 16px var(--black-shadow);
 }
 
 .content-max-width {
@@ -61,9 +67,9 @@ body {
 }
 
 .button-login {
-    border: 1px solid #E0E0E0;
+    border: 1px solid var(--gray-850);
     border-radius: 2px;
-    background-color: white;
+    background-color: var(--white);
     padding: 1.25em 3em;
     margin: 0;
     font: inherit;
@@ -72,15 +78,15 @@ body {
 }
 
 .header__row__item>button:hover {
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--gray-950);
 }
 
 .header__row__item>button:active {
-    background-color: var(--light-gray);
+    background-color: var(--gray-850);
 }
 
 .button-basket {
-    background-color: white;
+    background-color: var(--white);
     border: 0;
     padding: 1em;
 }
@@ -89,7 +95,7 @@ body {
     display: block;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid var(--gray-460);
     opacity: 0.3;
     margin-top: 4em;
 }
@@ -97,7 +103,7 @@ body {
 .search:focus-visible {
     border: 0;
     opacity: 1;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid var(--gray-460);
     outline: none;
 }
 
@@ -130,11 +136,11 @@ body {
 .restaurant-card:hover,
 .restaurant-card:focus,
 .restaurant-card:active {
-    background-color: rgb(117, 117, 117, 0.04);
+    background-color: var(--gray-460-shadow);
 }
 
 .price {
-    color: var(--darker-gray);
+    color: var(--gray-380);
     font-size: 0.875rem;
 }
 
@@ -148,7 +154,7 @@ body {
 }
 
 footer {
-    background-color: var(--lighter-black);
+    background-color: var(--black-150);
     min-width: 300px;
     color: var(--white);
 }
@@ -200,12 +206,12 @@ footer .hashtag {
 }
 
 .social>a:hover>img {
-    box-shadow: 0px 0px 6px white;
+    box-shadow: 0px 0px 6px var(--white);
     border-radius: 0.3em;
 }
 
 .footer__col>a:hover>img {
-    box-shadow: 0px 0px 6px white;
+    box-shadow: 0px 0px 6px var(--white);
     border-radius: 0.4em;
 }
 
@@ -215,9 +221,9 @@ footer .hashtag {
 }
 
 .dropdown__toggle {
-    color: white;
+    color: var(--white);
     padding: 0.5em 1em 0.5em 1em;
-    background-color: #3B3B3B;
+    background-color: var(--black-230);
     border: 0;
     border-radius: 0.2em;
     font-size: 1rem;
@@ -256,7 +262,7 @@ footer .hashtag {
 }
 
 .dropdown:hover .dropdown__toggle:hover {
-    background-color: #1D1D1D;
+    background-color: var(--black-110);
     border-top-left-radius: 0.2em;
     border-top-right-radius: 0.2em;
     border-bottom-left-radius: 0;
@@ -272,7 +278,7 @@ footer .hashtag {
 
 .dropdown__drawer {
     display: none;
-    background-color: #3B3B3B;
+    background-color: var(--black-230);
     position: absolute;
     z-index: 1;
     width: 70%;
@@ -280,7 +286,7 @@ footer .hashtag {
 
 .dropdown__drawer a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     display: block;
     padding: 0.8em 1em;
     font-size: 1rem;
@@ -306,7 +312,7 @@ footer .hashtag {
 }
 
 .dropdown:hover li:hover {
-    background-color: #1D1D1D;
+    background-color: var(--black-110);
 }
 
 .dropdown:hover li:hover:last-child {
@@ -342,4 +348,24 @@ footer .hashtag {
 .pm0 {
     padding: 0;
     margin: 0;
+}
+
+.button-up {
+    display: none;
+    width: 5em;
+    height: 5em;
+    background-image: url(Images/arrow-up.svg);
+    background-color: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: 1;
+    right: 1em;
+    bottom: 1em;
+    border: 0;
+    border-radius: 0.1em;
+}
+
+.button-up:hover {
+    background-color: var(--dark-green);
 }

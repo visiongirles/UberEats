@@ -143,11 +143,13 @@
                                 src="Images/Social/instagram.svg" alt="instagram"></a>
                     </div>
                 </div>
+
                 <div class="footer__col">
                     <a href="">Об UberEats</a>
                     <a href="">Станьте партнёром по доставке</a>
                     <a href="">Станьте парнёром-рестораном</a>
                 </div>
+
                 <div class="footer__col">
                     <a href="">Все города</a>
                     <a href="">Цены</a>
@@ -160,11 +162,11 @@
 
             <div class="footer__row center p-1">
                 <div class="footer__col"><a target="_blank"
-                        href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277"><img
-                            src="Images/Badges/App_Store_Badge.svg" alt=""></a></div>
+                        href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">
+                        <img src="Images/Badges/App_Store_Badge.svg" alt=""></a></div>
                 <div class="footer__col"><a target="_blank"
-                        href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en&gl=US"><img
-                            src="Images/Badges/Android_Store_Badge.svg" alt=""></a></div>
+                        href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en&gl=US">
+                        <img src="Images/Badges/Android_Store_Badge.svg" alt=""></a></div>
             </div>
 
             <hr class="pm0">
@@ -176,13 +178,30 @@
             </div>
         </div>
     </footer>
+
+    <button onclick="topFunction()" id="button-up" class="button-up" title="Go to top"></button>
+
 </body>
+<script>
+    // Get the button
+    let buttonUp = document.getElementById("button-up");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            buttonUp.style.display = "block";
+        } else {
+            buttonUp.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 </html>
-
-
-
-
-<!-- 
-Pop Up Button
-<div class="button pop-up"></div>  -->
