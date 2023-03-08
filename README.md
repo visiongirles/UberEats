@@ -10,4 +10,4 @@ The demo of how I used HTML & CSS skills to create adaptive design of this [Figm
 
 ## Check it out
 
-(tbd)
+https://uber-eats-by-duckate.netlify.app/
