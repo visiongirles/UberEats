@@ -205,7 +205,6 @@ footer .hashtag {
 
 }
 
-
 .social>a:hover>img {
     box-shadow: 0px 0px 6px var(--white);
     border-radius: 0.3em;
@@ -321,37 +320,6 @@ footer .hashtag {
     border-bottom-right-radius: 0.2em;
 }
 
-/* utilities */
-
-.p-1 {
-    padding: 2em 0;
-}
-
-
-.center {
-    justify-content: center;
-    column-gap: 2em;
-}
-
-
-
-.no-decoration-link,
-.no-decoration-link:link,
-.no-decoration-link:visited,
-.no-decoration-link:active {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.no-decoration-link:hover {
-    text-decoration: underline;
-}
-
-
-.pm0 {
-    padding: 0;
-    margin: 0;
-}
 
 .button-up {
     display: none;
@@ -371,4 +339,34 @@ footer .hashtag {
 
 .button-up:hover {
     background-color: var(--dark-green);
+}
+
+/* utilities */
+
+.p-1 {
+    padding: 2em 0;
+}
+
+
+.center {
+    justify-content: center;
+    column-gap: 2em;
+}
+
+.no-decoration-link,
+.no-decoration-link:link,
+.no-decoration-link:visited,
+.no-decoration-link:active {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.no-decoration-link:hover {
+    text-decoration: underline;
+}
+
+
+.pm0 {
+    padding: 0;
+    margin: 0;
 }
