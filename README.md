@@ -10,4 +10,4 @@ The demo of how I used HTML & CSS skills to create adaptive design of this [Figm
 
 ## Check it out
 
-https://uber-eats-by-duckate.netlify.app/
+<a target="_blank" href="https://uber-eats-by-duckate.netlify.app/">https://uber-eats-by-duckate.netlify.app/</a>
